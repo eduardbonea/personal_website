@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* <---------------------- start NAVBAR section -------------------------> */
+
+#open-menu-btn {
+    font-size: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+    padding: 0.5rem;
+    color: #0084ff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#open-menu-btn:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+#open-menu-btn:active {
+    transform: scale(0.9);
+}
+
+.side-menu {
+    height: 100vh; 
+    width: 20vw; 
+    background: linear-gradient(135deg, #4056A1 0%, #C54283 60%, #F13C20 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1002;
+    padding: 20px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.close-btn {
+    font-size: 5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2vh;
+    right: 20px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 40px 0 0 0;
+    margin: 0;
+}
+
+.side-menu li {
+    margin-bottom: 15px;
+}
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.side-menu a:hover {
+    text-decoration: underline;
+}
+
+
+#overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+}
+
+body.menu-open .side-menu {
+    transform: translateX(0);
+}
+
+body.menu-open #overlay {
+    display: block;
+}
+
+/* <---------------------- end NAVBAR -------------------------> */
+
+/* <---------------------- start HERO section -------------------------> */
+
+#bg-hero{
+    background-image: url(./assets/background-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-container {
+  padding-top: 10vh;
+  position: relative; 
+  min-height: 90vh; 
+}
+
+.hero-container-left {
+  position: absolute;
+  left: 10vw;
+  top: 10vh; 
+  width: 30vw;
+  height: 80vh;
+}
+
+#me_photo{
+    right: 10vw;
+    width: 30vw;
+    height: 80vh;
+    border-radius: 2rem;
+}
+
+.hero-container-right {
+
+  position: absolute;
+  right: 10vw;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30vw;
+  height: 80vh;
+}
+
+#text-hero{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.4rem;
+}
+
+/* <---------------------- end HERO section -------------------------> */
+
+/* <---------------------- start PROJECTS section -----------------------> */
+
+#bg-projects{
+    background-image: url(./assets/background-projects.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    min-height: 90vh; 
+    box-sizing: border-box; 
+}
+
+#bg-projects h1{
+    text-align: center;
+    margin-top: 3vh;
+    color: #fff;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 2rem;
+    padding-top: 30vw;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+#img-academiasperantei{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+#img-itfest{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+
+#img-crocoanonim{
+    object-fit: cover !important;
+}
+
+#img-itp{
+    object-fit: cover !important;
+}
+
+.project-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #0056b3;
+}
+
+.project-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.btn-project {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-project:hover {
+    background-color: #0056b3;
+}
+
+/* <---------------- MODALS ----------------------> */
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: relative;
+    z-index: 1002;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-content p{
+    padding-top: 0.5rem;
+}
+
+.modal.open .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #888;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* <---------------------- end PROJECTS section -------------------------> */
+
+/* <---------------------- start CV section -------------------------> */
+.CV{
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(2, 0, 36, 1) 87%);
+    height: 140vh;
+}
+
+#CV{
+    display: block;
+    margin: auto;
+    width: 45%;
+    padding-top: 5vh;
+}
+
+#downloadCV{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #00ff80;
+    background-color: rgb(0, 153, 255);
+    margin-left: 43vw;
+    margin-right: 43vw;
+    margin-top: 3.5vh;
+    border-radius: 2.5rem;
+
+}/* <---------------------- end CV section -------------------------> */
+
+/* <---------------------- start SOCIALS section -------------------------> */
+
+.socials{
+    height: 50vh;
+    background: #000000;
+}
+
+.socials h1{
+    text-align: center;
+    padding-top: 12vh;
+    color: #fff;
+}
+
+.socials p{
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.socials ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh; 
+}
+
+.socials ul li {
+  list-style: none;
+}
+
+.socials ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.socials ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.socials ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.socials ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00; 
+  transition: .5s;
+  z-index: 2;
+}
+
+.socials ul li a:hover:before {
+  top: 0;
+}
+
+.socials ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.socials ul li:nth-child(2) a:before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.socials ul li:nth-child(3) a:before {
+background: #333;
+}
+
+.socials ul li:nth-child(4) a:before {
+background: #e24329;
+}
+
+.socials ul li:nth-child(5) a:before {
+background: #0077b5;
+}
+
+/* <---------------------- end SOCIALS section -------------------------> */
+
+/* <---------------------- Responsiveness -------------------------> */
+
+
+@media (max-width: 768px) {
+
+  /* ---------- Navbar ---------- */
+  #open-menu-btn {
+    font-size: 2.2rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  .side-menu {
+    width: 70vw;
+    padding: 15px;
+  }
+
+  .side-menu a {
+    font-size: 1.8rem;
+  }
+
+  .close-btn {
+    font-size: 3rem;
+    top: 1rem;
+    right: 10px;
+  }
+
+  /* ---------- Hero Section ---------- */
+  #bg-hero {
+    height: auto;
+    background-position: center;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .hero-container-left,
+  .hero-container-right {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  #me_photo {
+    width: 80%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  #text-hero {
+    font-size: 1rem;
+  }
+
+  /* ---------- Projects Section ---------- */
+  #bg-projects {
+    padding: 2rem 1rem;
+    background-image: none;
+    background-color: #0084ff91;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    padding-top: 10vh;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .btn-project {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  /* ---------- Modal ---------- */
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* ---------- CV Section ---------- */
+  .CV {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  #CV {
+    width: 90%;
+  }
+
+  #downloadCV {
+    margin: 2rem auto 0 auto;
+    width: 60%;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+
+ 
+
+  /* ---------- Socials Section ---------- */
+  .socials {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .socials h1 {
+    font-size: 1.6rem;
+    padding-top: 0;
+  }
+
+  .socials p {
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+
+  .socials ul {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    gap: 1rem;
+  }
+
+  .socials ul li a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+  }
+}
+
+/* <---------------------- end RESPONSIVE (Mobile) -------------------------> */

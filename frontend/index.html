@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!------------------- NAVBAR ---------------------->
+
+    <button id="open-menu-btn" class="menu-toggle">
+        &#9776; </button>
+
+
+    <div id="overlay"></div>
+
+    <nav id="side-menu" class="side-menu">
+        <button id="close-menu-btn" class="menu-toggle close-btn">
+            &times; </button>
+        <ul>
+            <li><a href="#bg-hero">Acasă</a></li>
+            <li><a href="#bg-projects">Proiecte</a></li>
+            <li><a href="#cv-nav">CV</a></li>
+            <li><a href="#socials">Socials</a></li>
+        </ul>
+    </nav>
+
+    <!------------------- HERO SECTION ---------------->
+
+    <div id="bg-hero">
+        <div class="hero-container">
+            <div class="hero-container-left">
+                <img src="./assets/me.jpg" id="me_photo">
+            </div>
+            <div class="hero-container-right">
+                <p id="text-hero">Salut! Eu sunt <b>Eduard Bonea</b>, student la <b>Cibernetică, Statistică și Informatică Economică</b> în cadrul ASE București.</p>
+                <br>
+                <p id="text-hero">
+                Sunt pasionat de <b>IT</b>, în special de <b>dezvoltare web și rețelistică</b>. Îmi place să învăț cum funcționează lucrurile în spate  de la <b>aplicații web</b> până la <b>servere</b> și conexiuni.
+                </p>
+                <br>
+                <p id="text-hero">
+                Am început să programez din curiozitate, iar în timp am descoperit cât de mult îmi place să construiesc lucruri utile.
+                Am lucrat cu tehnologii precum <b>Node.js, React</b>, și am prins experiență cu <b>Linux, Nginx, PM2 și SSH</b>.
+                Pe partea de rețelistică, am urmat un curs de <b>CCNA</b>, care m-a ajutat să înțeleg mai bine infrastructura și modul în care comunică sistemele între ele.
+                </p>
+                <br>
+                <p id="text-hero">
+                Momentan fac parte din echipa <b>IT Back-End & DevOps</b> al <b>SiSC</b>, unde lucrez la proiecte interne și învăț constant lucruri noi despre colaborarea în echipă și gestionarea site-urilor și aplicațiilor proiectelor organizației.
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!----------------- Projects SECTION -------------------->
+
+    <div id="bg-projects">
+
+        <h1>Acestea sunt câteva din proiectele pe care am lucrat:</h1>
+
+        <div class="projects-container">
+
+            <article class="project-card">
+                <img src="./assets/AcademiaSperantei.png" id="img-academiasperantei" alt="Project 1 Preview">
+                <div class="project-info">
+                    <h3>Academia SpEranței</h3>
+                    <p>Proiect caritabil marca SiSC</p>
+                    <a href="#" class="btn-project" data-modal-target="#modal-project-1">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="./assets/itfest.webp" id="img-itfest" alt="Project 2 Preview">
+                <div class="project-info">
+                    <h3>ITFest</h3>
+                    <p>Proiect de toamna marca SiSC</p>
+                    <a href="#" class="btn-project" data-modal-target="#modal-project-2">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="./assets/crocoanonim.png" id="img-crocoanonim" alt="Project 3 Preview">
+                <div class="project-info">
+                    <h3>CrocoAnonim</h3>
+                    <p>Proiect intern SiSC</p>
+                    <a href="#" class="btn-project" data-modal-target="#modal-project-3">View Project</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="./assets/itp.jpg" id="img-itp" alt="Project 4 Preview">
+                <div class="project-info">
+                    <h3>ITP App</h3>
+                    <p>Proiect personal</p>
+                    <a href="#" class="btn-project" data-modal-target="#modal-project-4">View Project</a>
+                </div>
+            </article>
+
+        </div>
+
+<!---------------- modal section ------------------->
+
+        <div class="modal" id="modal-project-1">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2>Academia SpEranței - ediția de iarnă</h2>
+                <p>În cadrul acestui proiect, în iarna anului 2024, am avut ocazia de a lua prima data contactul cu departamentul IT în parcursul meu în organizație și din postura de membru IT al proiectului. În cadrul acestui proiect am avut oportunitatea de a mă pune în locul unui Front-End Developer și a contribui la pagina de articole, cât și în a rezolva mai multe bug-uri apărute în urma merge-urilor între brench-uri dar și mici chestii de finețe al aspectului website-ului.</p>
+                <a href="https://hope.sisc.ro" target="_blank"  class="btn-project">Visit Live Site</a>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-project-2">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2>ITFest</h2>
+                <p>În cadrul acestui proiect, în vara anului 2025, am putut să învăt și să aprofundez abilitățile unui Back-End Developer, realizând câteva rute și validări ale formularelor, folosind Node.js, Express.js și câteva regex-uri</p>
+                <a href="https://itfest.sisc.ro" target="_blank"  class="btn-project">Visit Live Site</a>
+            </div>
+        </div>
+    
+        <div class="modal" id="modal-project-3">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2>CrocoAnonim</h2>
+                <p>Ce inițial a pornit de la o idee banală realizata printr-o adresă de gmail, a devenit mai apoi un întreg proiect intern prin intermediul unei aplicații. Cu ajutorul unui bun prieten am reușit să dezvolăm o aplicație prin care membrii organizației puteau deschide tickete anonim, punând o anumita problemă, răspunsurile pe acel topic fiind tot anomime.</p>
+                <a href="github.com/eduardbonea" target="_blank"  class="btn-project">Visit Git Repo</a>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-project-4">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2>ITP App</h2>
+                <p>Majoritatea staților ITP nu au o modalitate de gestiune a vizitelor. Prin această aplicație aceștia pot gestiona programările stocate într-o bază de date cu ajutorul unui formular. Urmând ca apoi un API să trimită un SMS numarului de telefon introdus în câmpul specific prin care anuntă clientul că este așteptat la serivce la ora stabilită tot prin formular. Tehnologiile folosite fiind React + Vite pentru Front-End și Node.js pentru Back-End cu framework-urile Express.js si Sequelize.js </p>
+                <a href="http://159.223.23.236:3000" target="_blank" class="btn-project">Visit Live Site</a>
+            </div>
+        </div>
+
+    </div>
+
+<!-------------- CV Section ----------------->
+
+    <div class="CV" id="cv-nav">
+        <img src="./assets/Eduard_Bonea_CV.jpg" id="CV" alt="myCV">
+        <a href="./assets/Eduard_Bonea_CV.pdf" 
+        id="downloadCV" download> Descarcă CV-ul meu (PDF) </a>
+    </div>
+
+<!-------------------- socials section -------------------------->
+
+    <div class="socials" id="socials">
+        <h1> My Socials </h1>
+        <p>Pentru mai multe detalii mă puteți găsi pe:</p>
+
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/eduardbonea/">
+                <i class="fab fa-facebook-f icon"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/eduardbonea"><i class="fab fa-instagram icon"></i></a>
+            </li>
+            <li>
+                <a href="https://www.github.com/eduardbonea/"><i class="fab fa-github icon"></i></a>
+            </li>
+            <li>
+                <a href="https://www.gitlab.com/eduardbonea/"><i class="fab fa-gitlab icon"></i></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/eduardbonea/"><i class="fab fa-linkedin-in icon"></i></a>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="./navbar.js"></script>
+    <script src="./modals.js"></script>
+</body>
+</html>
