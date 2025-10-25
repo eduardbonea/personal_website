@@ -110,7 +110,6 @@ body.menu-open #overlay {
   padding-top: 10vh;
   position: relative; 
   min-height: 90vh;
-  overscroll-behavior: none;
 }
 
 .hero-container-left {
@@ -369,7 +368,6 @@ body.menu-open #overlay {
 .socials{
     height: 50vh;
     background: #000000;
-    overscroll-behavior: none;
 }
 
 .socials h1{
