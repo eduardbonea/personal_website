@@ -100,7 +100,7 @@ body.menu-open #overlay {
 /* <---------------------- start HERO section -------------------------> */
 
 #bg-hero{
-    background-image: url(./assets/background-hero.jpg);
+    background-image: url(./assets/background-hero.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -109,7 +109,8 @@ body.menu-open #overlay {
 .hero-container {
   padding-top: 10vh;
   position: relative; 
-  min-height: 90vh; 
+  min-height: 90vh;
+  overscroll-behavior: none;
 }
 
 .hero-container-left {
@@ -150,7 +151,7 @@ body.menu-open #overlay {
 /* <---------------------- start PROJECTS section -----------------------> */
 
 #bg-projects{
-    background-image: url(./assets/background-projects.jpg);
+    background-image: url(./assets/background-projects.webp);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -368,6 +369,7 @@ body.menu-open #overlay {
 .socials{
     height: 50vh;
     background: #000000;
+    overscroll-behavior: none;
 }
 
 .socials h1{
