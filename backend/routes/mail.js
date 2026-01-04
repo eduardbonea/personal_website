@@ -14,15 +14,16 @@ router.post('/sendEmail', async (req, res) => {
             message: message
         });
 
-        const transporter = nodemailer.createTransport({
-            host: process.env.TRANSPORTER_HOST,
-            port: process.env.TRANSPORTER_PORT,
-            secure: false,
-            tls: { rejectUnauthorized: false }
-        });
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: process.env.EMAIL_USER,
+                    pass: process.env.EMAIL_PASS
+                }
+            });
 
         const mailOptions = {
-            from: process.env.FROM_MAIL,
+            from: `"Website Bot" <${process.env.EMAIL_USER}>`,
             to: process.env.TO_MAIL,
             subject: `New message from: ${name}`,
             text: `You have a new message stored in DB. \n \n 

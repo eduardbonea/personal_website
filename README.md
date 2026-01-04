@@ -8,13 +8,13 @@
 </p>
 
 <h3 align="left"> Website Personal </h3>
-Acesta este repository-ul pentru website-ul meu personal, (https://eduardbonea.com). Acest proiect servește ca portofoliu digital pentru a-mi prezenta competențele, proiectele și parcursul profesional.
+Acesta este repository-ul pentru website-ul meu personal, [tip portofoliu](https://eduardbonea.com). Acest proiect servește ca portofoliu digital pentru a-mi prezenta competențele, proiectele și parcursul profesional.
 
 ## 📜 Despre Proiect
 
 Scopul acestui website este de a oferi o platformă centralizată unde potențialii angajatori, colaboratori sau oricine interesat poate afla mai multe despre mine și munca mea. Site-ul este construit de la zero, punând accent pe un design curat, modern și o experiență de utilizare (UX) plăcută.
 
-**URL Website:** [portofolio](https://eduardbonea.com)
+**URL Website:** https://eduardbonea.com
 
 ---
 
