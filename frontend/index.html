@@ -363,20 +363,20 @@
         <p id="contact-description">Mă poți contacta folosind următorul formular sau prin link-urile de social-media de mai jos</p>
         
         <div class="contact-container">
-            <form class="contact-form">
-                <div class="form-group">
-                    <label>Nume</label>
-                    <input type="text" placeholder="Numele tău...">
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="email@exemplu.com">
-                </div>
-                <div class="form-group">
-                    <label>Mesaj</label>
-                    <textarea placeholder="Cu ce te pot ajuta?"></textarea>
-                </div>
-                <button type="submit" class="btn-send">Trimite Mesaj</button>
+            <form class="contact-form" id="main-contact-form">
+              <div class="form-group">
+                  <label>Nume</label>
+                  <input type="text" id="name" placeholder="Numele tău..." required>
+              </div>
+              <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" id="email" placeholder="email@exemplu.com" required>
+              </div>
+              <div class="form-group">
+                  <label>Mesaj</label>
+                  <textarea id="message" placeholder="Cu ce te pot ajuta?" required></textarea>
+              </div>
+              <button type="submit" class="btn-send">Trimite Mesaj</button>
             </form>
         </div>
     </section>
@@ -418,5 +418,7 @@
 
     <script src="./navbar.js"></script>
     <script src="./modals.js"></script>
+    <script src="./contact-form.js"></script>
+
   </body>
 </html>
