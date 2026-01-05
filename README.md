@@ -8,7 +8,7 @@
 </p>
 
 <h3 align="left"> Website Personal </h3>
-Acesta este repository-ul pentru website-ul meu personal, [tip portofoliu](https://eduardbonea.com). Acest proiect servește ca portofoliu digital pentru a-mi prezenta competențele, proiectele și parcursul profesional.
+Acesta este repository-ul pentru website-ul meu personal. Acest proiect servește ca portofoliu digital pentru a-mi prezenta competențele, proiectele și parcursul profesional.
 
 ## 📜 Despre Proiect
 
@@ -35,11 +35,14 @@ Proiectul este construit folosind următoarele tehnologii:
 * **[Express.js](https://expressjs.com/)**: Un framework minimalist pentru Node.js, folosit pentru a construi API-ul RESTful.
 * **[Sequelize](https://sequelize.org/)**: Un ORM (Object-Relational Mapper) bazat pe promisiuni pentru Node.js. Simplifică interacțiunea cu baza de date (ex: PostgreSQL, MySQL, SQLite).
 * **Baza de date: [mysql](https://www.mysql.com/).**
+* **[SendGrid API](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-nodejs).**: API utilizat pentru transmiterea e-mailurilor generate prin formularul de contact.
+
 
 ---
 
 ## ✨ Funcționalități Principale
 
 * **Prezentarea Proiectelor**: Scurta prezentare a proiectelor, însoțite de link-uri către aplicația live dar și acces complet la codul sursă de pe repo.
-* **Vizualizare CV**: Secțiune dedicată pentru vizualizarea CV-ului și posibilitatea de a îl descărca în format PDF printr-un singur click.
-* **Formular de Contact Direct**: Trimiterea de e-mail-uri direct din aplicație, facilitând comunicarea rapidă fără a părăsi site-ul.
+* **Timeline**: Secțiune dedicată pentru vizualiza parcursul meu profesional sub forma unui timeline.
+* **Descărcare CV**: Secțiune dedicată pentru a descărca CV-ul în format PDF.
+* **Formular de Contact Direct**: Trimiterea de e-mail-uri direct din website, facilitând comunicarea rapidă fără a părăsi site-ul, stocând de asemenea datele din formular în baza de date de pe server, ca backup.
