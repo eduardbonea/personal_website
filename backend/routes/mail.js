@@ -3,10 +3,23 @@ const express = require('express');
 const router = express.Router();
 const { Resend } = require('resend');
 const Contact = require('../models/contact');
+const rateLimit = require('express-rate-limit');
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-router.post('/sendEmail', async (req, res) => {
+const contactFormLimiter = rateLimit({
+	windowMs: 60 * 60 * 1000,
+	limit: 3,
+	standardHeaders: 'draft-7',
+	legacyHeaders: false, 
+    
+    handler: (req, res, next, options) => {
+        console.log('Rate limited');
+		return res.status(429).json({msg: 'Ai atins limita de mesaje'})
+	},
+});
+
+router.post('/sendEmail', contactFormLimiter, async (req, res) => {
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
@@ -14,14 +27,10 @@ router.post('/sendEmail', async (req, res) => {
     }
 
     try {
-        await Contact.create({
-            name: name,
-            email: email,
-            message: message
-        });
+        await Contact.create({ name, email, message });
 
         const data = await resend.emails.send({
-            from: process.env.FROM_MAIL,
+            from: process.env.FROM_MAIL, 
             to: process.env.TO_MAIL,
             reply_to: email,
             subject: `Contact Nou: ${name}`,
@@ -37,7 +46,7 @@ router.post('/sendEmail', async (req, res) => {
 
         if (data.error) {
             console.error(data.error);
-            return res.status(500).json({ msg: 'Eroare la trimiterea emailului prin Resend' });
+            return res.status(500).json({ msg: 'Eroare la trimiterea emailului' });
         }
         
         res.status(200).json({ msg: 'Sent and saved in local DB', id: data.id });
