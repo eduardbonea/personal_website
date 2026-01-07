@@ -35,7 +35,7 @@ Proiectul este construit folosind următoarele tehnologii:
 * **[Express.js](https://expressjs.com/)**: Un framework minimalist pentru Node.js, folosit pentru a construi API-ul RESTful.
 * **[Sequelize](https://sequelize.org/)**: Un ORM (Object-Relational Mapper) bazat pe promisiuni pentru Node.js. Simplifică interacțiunea cu baza de date (ex: PostgreSQL, MySQL, SQLite).
 * **Baza de date: [mysql](https://www.mysql.com/).**
-* **[SendGrid API](https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-nodejs).**: API utilizat pentru transmiterea e-mailurilor generate prin formularul de contact.
+* **[Resend API](https://resend.com/docs/api-reference/emails/send-email)**: API utilizat pentru transmiterea e-mailurilor generate prin formularul de contact.
 
 
 ---

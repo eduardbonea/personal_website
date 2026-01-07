@@ -61,7 +61,7 @@ const translations = {
     timeline_COT_title: "Code of Talent - Apprenticeship",
     timeline_COT_text:
       "Gained practical experience in PHP and professional backend development during a one month internship.",
-    cv_text: "My CV",
+    cv_text: "Check my CV",
     cv_download: "Download (PDF)",
     contact_h1: "Contact form",
     contact_desc:
