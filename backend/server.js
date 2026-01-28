@@ -3,8 +3,8 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const db = require('./models/contact');
-const router = require('./routes/mail');
+const db = require('./models');
+const { contactRouter } = require('./routes');
 
 const port = process.env.SERVER_PORT;
 
@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.send('Backend works!');
 });
 
-app.use('/api', router);
+app.use('/api', contactRouter);
 
 app.get('/reset', async (req, res) => {
     await db.sync({ force: true});
