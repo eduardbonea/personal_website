@@ -8,7 +8,7 @@ const { contactRouter } = require('./routes');
 
 const port = process.env.SERVER_PORT;
 
-app.use(cors({ origin: 'http://localhost:5500'}));
+app.use(cors({ origin: 'https://eduardbonea.com'}));
 app.use(express.json());
 
 app.get('/', (req, res) => {
