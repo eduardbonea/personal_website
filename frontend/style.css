@@ -362,6 +362,90 @@ body.menu-open .side-menu {
   justify-content: center;
 }
 
+/* <---------------------- GITHUB SECTION -------------------------> */
+
+#bg-github {
+  padding: 2.5rem 1.25rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+#bg-github h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.github-graph {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--text-primary);
+}
+
+.github-graph .sr-only, 
+.github-graph a,
+.github-graph .js-year-link {
+  display: none !important;
+}
+
+.github-graph rect.day, 
+.github-graph .ContributionCalendar-day {
+  rx: 3px; 
+  ry: 3px;
+  shape-rendering: geometricPrecision;
+}
+
+.github-graph [data-level="0"] { fill: #161b22 !important; }
+.github-graph [data-level="1"] { fill: #0e4429 !important; }
+.github-graph [data-level="2"] { fill: #006d32 !important; }
+.github-graph [data-level="3"] { fill: var(--accent-blue) !important; } 
+.github-graph [data-level="4"] { fill: var(--status-green) !important; }
+
+.github-graph text.month, 
+.github-graph text.wday {
+  fill: var(--text-secondary) !important;
+  font-size: 10px;
+}
+
+.contrib-column {
+  border: none !important;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.contrib-number {
+  color: var(--text-primary) !important;
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: block;
+}
+
+.contrib-text {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.github-graph .legend {
+  color: var(--text-secondary);
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+@media (max-width: 48rem) {
+  .github-graph {
+    overflow-x: auto;
+  }
+  .github-graph svg {
+    min-width: 600px;
+  }
+}
+
 /* <---------------------- Timeline -----------------------------------> */
 
 #bg-timeline {

@@ -48,6 +48,10 @@ const translations = {
     check_demo: "Check Demo",
     check_git: "Check Git Repo",
     timeline_h1: "My Journey",
+    timeline_RASIROM_date: "July 2026 - September 2026",
+    timeline_RASIROM_title: "Junior DevOps Engineer Intern",
+    timeline_RASIROM_text:
+      "Junior DevOps Engineer Intern focused on deploying and maintaining scalable applications. Experienced with Docker, Nginx, PM2, and monitoring tools like Prometheus and Grafana, working with Linux servers and cloud-based infrastructure to ensure reliable and efficient system performance.",
     timeline_SiSC_date: "2024 - Present",
     timeline_SiSC_title: "IT Back-End & DevOps - SiSC",
     timeline_SiSC_text:
@@ -125,6 +129,10 @@ const translations = {
     check_demo: "Vezi un demo",
     check_git: "Codul sursă",
     timeline_h1: "Experiență",
+    timeline_RASIROM_date: "Iulie 2026 - Septembrie 2026",
+    timeline_RASIROM_title: "Intern Junior Inginer DevOps",
+    timeline_RASIROM_text:
+      "Intern Junior Inginer DevOps cu experiență în deployment și mentenanța aplicațiilor scalabile. Lucrez cu Docker, Nginx, PM2 și tool-uri de monitorizare precum Prometheus și Grafana, administrând servere Linux și infrastructuri cloud pentru a asigura performanță și stabilitate.",
     timeline_SiSC_date: "2024 - Prezent",
     timeline_SiSC_title: "IT Back-End & DevOps - SiSC",
     timeline_SiSC_text:

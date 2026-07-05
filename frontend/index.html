@@ -12,6 +12,8 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
   </head>
   <body>
     <canvas id="stars"></canvas>
@@ -345,6 +347,64 @@
             >
           </div>
         </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/projects/cctv.webp"
+            id="img-cctv"
+            alt="Project 5 Preview"
+          />
+          <div class="project-info">
+            <h3>CCTV App</h3>
+            <p lang-translate="proj_5_sub">Personal Project</p>
+            <a
+              href="#"
+              class="btn-project"
+              data-modal-target="#modal-project-5"
+              lang-translate="view_proj"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/projects/convertly.webp"
+            id="img-convertly"
+            alt="Project 6 Preview"
+          />
+          <div class="project-info">
+            <h3>Convertly</h3>
+            <p lang-translate="proj_6_sub">Personal Project</p>
+            <a
+              href="#"
+              class="btn-project"
+              data-modal-target="#modal-project-6"
+              lang-translate="view_proj"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="./assets/projects/cei.webp"
+            id="img-cei"
+            alt="Project 7 Preview"
+          />
+          <div class="project-info">
+            <h3>RoID Hub</h3>
+            <p lang-translate="proj_7_sub">Personal Project</p>
+            <a
+              href="#"
+              class="btn-project"
+              data-modal-target="#modal-project-7"
+              lang-translate="view_proj"
+              >View Project</a
+            >
+          </div>
+        </div>
+
       </div>
 
       <!---------------- personal modal section ------------------->
@@ -418,6 +478,108 @@
           >
         </div>
       </div>
+
+      <div class="modal" id="modal-project-5">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <h2 lang-translate="modal_5_title">CCTV</h2>
+          <p lang-translate="modal_5_text1">
+            This project was developed as a real CCTV application for my parents' home, designed to provide reliable and easy-to-use residential security. The app allows them to add and manage new cameras, watch live video feeds in real time, and access recorded footage organized by day. They can delete recordings manually or configure automatic retention settings to control how long footage is stored. <br> <br>
+            The application also offers secure login, remote access from anywhere, and a simple, intuitive interface, ensuring they can monitor and manage their home security system safely and without technical complexity, perfect to host it on a web server.
+          </p>
+          <br />
+          <p lang-translate="modal_5_text2">
+            For a live demo of the application, use the following login
+            credentials:
+            <br /><br />
+            <b>username: guest<br />password: Password1!</b>
+          </p>
+          <a
+            href="https://cctv.eduardbonea.com"
+            target="_blank"
+            class="btn-project"
+            lang-translate="check_demo"
+            >Check Demo</a
+          >
+          <a
+            href="https://github.com/eduardbonea/cctv-app"
+            target="_blank"
+            class="btn-project"
+            lang-translate="check_git"
+            >Check Git Repo</a
+          >
+        </div>
+      </div>
+
+      <div class="modal" id="modal-project-6">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <h2 lang-translate="modal_6_title">Convertly</h2>
+          <p lang-translate="modal_6_text1">
+            Convertly is a universal web-based file converter that allows users to convert images, audio, video, and PDF files directly from the browser. It supports format conversion, resizing and quality control for images, audio extraction from video, video resolution changes, PDF merge/split/compress, and PDF-to-image processing.
+          </p>
+          <br />
+          <p lang-translate="modal_6_text2">
+            For a live demo of the application, use the following login
+            credentials:
+            <br /><br />
+            <b>email: test@eduardbonea.com<br />password: Password1!</b>
+          </p>
+          <a
+            href="https://convertly.eduardbonea.com"
+            target="_blank"
+            class="btn-project"
+            lang-translate="check_demo"
+            >Check Demo</a
+          >
+          <a
+            href="https://github.com/eduardbonea/convertly"
+            target="_blank"
+            class="btn-project"
+            lang-translate="check_git"
+            >Check Git Repo</a
+          >
+        </div>
+      </div>
+
+      <div class="modal" id="modal-project-7">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+          <button class="modal-close">&times;</button>
+          <h2 lang-translate="modal_7_title">RoID Hub</h2>
+          <p lang-translate="modal_7_text1">
+            RoID Hub is a web-based application designed to read, manage, and use data from the Romanian Electronic Identity Card (CEI) in secure digital workflows.<br>
+            <br>
+            The platform allows users to securely access personal data and qualified certificates stored on the CEI via the official PKCS#11 library. Users can view the identity information extracted from the card, edit relevant details when preparing documents, and digitally sign one or multiple PDF files with visual signature placement.<br>
+            <br>
+            RoID Hub supports ECDSA certificates issued for CEI and enables direct download of signed documents after processing. The application can be deployed on a Linux-based web server or run locally on Windows, making it suitable for both organizational environments and individual professional use.
+          </p>
+          <br />
+          <p lang-translate="modal_6_text2">
+            For a live demo of the application, use the following login
+            credentials:
+            <br /><br />
+            <b>email: test@eduardbonea.com<br />password: Password1!</b>
+          </p>
+          <a
+            href="https://cei-app.eduardbonea.com"
+            target="_blank"
+            class="btn-project"
+            lang-translate="check_demo"
+            >Check Demo</a
+          >
+          <a
+            href="https://github.com/eduardbonea/cei-app"
+            target="_blank"
+            class="btn-project"
+            lang-translate="check_git"
+            >Check Git Repo</a
+          >
+        </div>
+      </div>
+
     </div>
 
     <!-------------- Timeline Section ----------------->
@@ -425,6 +587,22 @@
     <div id="bg-timeline">
       <h1 id="timeline-h1" lang-translate="timeline_h1">My Journey</h1>
       <div class="timeline-container">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date" lang-translate="timeline_RASIROM_date">
+            July 2026 - September 2026
+          </div>
+          <div class="timeline-content">
+            <h3 lang-translate="timeline_RASIROM_title">
+              Intern Junior Inginer DevOps 
+            </h3>
+            <p lang-translate="timeline_RASIROM_text">
+              Junior DevOps Engineer Intern focused on deploying and maintaining scalable applications. Experienced with Docker, Nginx, PM2, and monitoring tools like Prometheus and Grafana, working with Linux servers and cloud-based infrastructure to ensure reliable and efficient system performance.
+            </p>
+          </div>
+        </div>
+
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-date" lang-translate="timeline_SiSC_date">
@@ -474,6 +652,8 @@
         </div>
       </div>
     </div>
+
+    
 
     <!-------------- CV Section ----------------->
 
